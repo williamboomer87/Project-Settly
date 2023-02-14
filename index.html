@@ -1,0 +1,382 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Feb 14 2023 08:20:57 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="63dcda1eb87d176a80e51242" data-wf-site="63dcda1db87d17133fe5123a">
+<head>
+  <meta charset="utf-8">
+  <title>Settly - Done For You Appointment Setting</title>
+  <meta content="Settly is a custom appointment-setting service that enables your sales team to just focus on closing deals while we book out their calendars. Schedule a call with us today to see how we can help you." name="description">
+  <meta content="Settly - Fill The Calendars Of Your Sales Team" property="og:title">
+  <meta content="Settly is a custom appointment setting service that enables your sales team to just focus on closing deals while we book out their calendars. Schedule a call with us today to see how we can help you." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/63dcda1db87d17133fe5123a/63e9ddadea70d7471180ee20_OG.png" property="og:image">
+  <meta content="Settly - Fill The Calendars Of Your Sales Team" property="twitter:title">
+  <meta content="Settly is a custom appointment setting service that enables your sales team to just focus on closing deals while we book out their calendars. Schedule a call with us today to see how we can help you." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/63dcda1db87d17133fe5123a/63e9ddadea70d7471180ee20_OG.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/settly.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lexend:200,300,regular,500,600,700,800"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+</style>
+    </div>
+    <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+      <div class="container-large nav">
+        <a href="#" class="w-nav-brand"><img src="images/Settly.svg" loading="lazy" alt=""></a>
+        <a href="#" class="button is-large w-button">Book An Appointment</a>
+        <nav role="navigation" class="nav_menu w-nav-menu">
+          <a href="#" class="button is-large w-button">Get Early Access</a>
+        </nav>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <div class="section_home-hero">
+        <div class="padding-global">
+          <div class="padding-vertical padding-xhuge">
+            <div class="container-large">
+              <div class="home_hero-component">
+                <div class="home-haeding">
+                  <h1>Fill The Calendars Of Your <span class="text-span-blue">Sales Team</span></h1>
+                </div>
+                <div class="padding-bottom padding-medium"></div>
+                <div class="max-width-large">
+                  <p>Settly is a custom appointment setting service that enables your sales team to just focus on closing deals while we book out their calendars. Schedule a call with us today to see how we can help you.</p>
+                </div>
+                <div class="padding-bottom padding-xlarge"></div>
+                <a href="#" class="button w-button">Book An Appointment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_hero-image"><img src="images/hero.png" loading="lazy" sizes="(max-width: 2881px) 100vw, 2881px" srcset="images/hero-p-500.png 500w, images/hero-p-800.png 800w, images/hero-p-1080.png 1080w, images/hero-p-1600.png 1600w, images/hero-p-2000.png 2000w, images/hero-p-2600.png 2600w, images/hero.png 2881w" alt="" class="hide-tablet"><img src="images/h-2.png" loading="lazy" sizes="100vw" srcset="images/h-2-p-500.png 500w, images/h-2.png 764w" alt="" class="image">
+          <div class="blur"></div>
+        </div>
+      </div>
+      <div class="section_home-2">
+        <div class="padding-global">
+          <div class="padding-vertical padding-xhuge less-bottom">
+            <div class="container-large">
+              <div class="sec-2-head">
+                <h2>Appointment Setting-As-A-Service</h2>
+                <div class="padding-bottom padding-medium"></div>
+                <div class="max-width-large">
+                  <p>Settly is a custom appointment setting service that enables your sales team to just focus on closing deals while we book out their calendars. Schedule a call with us today to see how we can help you.</p>
+                </div>
+              </div>
+              <div class="sec-2-grid">
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb72-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb72" style="opacity:0" class="grid-image left"><img src="images/Group-1000004407.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004407-p-500.png 500w, images/Group-1000004407.png 799w" alt="" class="grid-img"></div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb74-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb74" style="opacity:0" class="grid-text">
+                  <h2>Performance Based Appointment Setting</h2>
+                  <div class="divider"></div>
+                  <p>Our professional appointment setters are dedicated to delivering stellar performance that will help you reach your goals. Hosting the right conversations with the right prospects is essential in transforming leads into appointments and opportunities into sales. Our experienced team of appointment setters provide tailored solutions, designed to work within any budget and setting requirement. <br><br>From follow up calls to booking calendar invites, our team makes sure to understand your needs before getting on the call – allowing them to make an impactful conversation every time. Utilize our performance based appointment setting today and give your business the edge it needs.</p>
+                </div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb7d-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb7d" style="opacity:0" class="grid-text">
+                  <h2>Build A Strong Sales Pipeline More Quickly</h2>
+                  <div class="divider"></div>
+                  <p>Having the right sales pipeline can make or break your business. With the help of our professional appointment setters, you can move beyond manually generating leads and start building a strong and successful sales pipeline more quickly than ever. <br><br>Our expert team of qualified appointment setters have vast experience in lead generation, nurturing prospects and securing time slots with decision makers to ensure your sales team has the right appointments at the right time. Utilizing their years of accumulated skill and expertise, you can be confident that your organization&#x27;s sales process will run smoother and more efficiently in no time.</p>
+                </div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb86-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb86" style="opacity:0" class="grid-image right"><img src="images/Group-1000004405.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004405-p-500.png 500w, images/Group-1000004405-p-800.png 800w, images/Group-1000004405.png 828w" alt="" class="grid-img"></div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb88-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb88" style="opacity:0" class="grid-image left"><img src="images/Group-1000004406.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 762px) 94vw, (max-width: 767px) 717px, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004406-p-500.png 500w, images/Group-1000004406.png 717w" alt="" class="grid-img"></div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb8a-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb8a" style="opacity:0" class="grid-text">
+                  <h2>Give Your Sales Team More Time To Close Deals</h2>
+                  <div class="divider"></div>
+                  <p>Give your sales team more time to do what they do best: close deals. Our professional appointment setters take the hassle out of setting up meetings with potential clients. Their expertise and personalization of approach leads to higher success in securing appointments, leaving your sales team more time to make those conversions happen. <br><br>With our appointment setters on your side, your sales team will never need to worry about wasting another second trying to get a meeting scheduled. Tap into our appointment setting services and watch your business grow.</p>
+                </div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb93-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb93" style="opacity:0" class="grid-text">
+                  <h2>Get More Appointments Booked. Consistently</h2>
+                  <div class="divider"></div>
+                  <p>Booking appointments no longer has to take up your time and resources. With our professional appointment setters, you can easily get more appointments booked consistently to further your business goals. <br><br>Our experienced team knows exactly how to identify potential customers, build relationships with them, and convert them into paying clients. We make it happen in an efficient and timely manner giving you the opportunity to focus on what&#x27;s really important – running a successful business, scaling operations, and reaching strategic objectives. Schedule a call today and see how we can help you maximize your returns.</p>
+                </div>
+                <div id="w-node-_963b4d5c-c3b5-90a6-1f28-bdb6c4bffb9c-80e51242" data-w-id="963b4d5c-c3b5-90a6-1f28-bdb6c4bffb9c" style="opacity:0" class="grid-image right _2"><img src="images/Group-1000004404.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004404-p-500.png 500w, images/Group-1000004404-p-800.png 800w, images/Group-1000004404.png 821w" alt="" class="grid-img"></div>
+              </div>
+            </div>
+          </div>
+        </div><img src="images/Ellipse-185.png" loading="lazy" sizes="(max-width: 980px) 100vw, (max-width: 991px) 980px, (max-width: 1919px) 40vw, 50vw" srcset="images/Ellipse-185-p-500.png 500w, images/Ellipse-185-p-800.png 800w, images/Ellipse-185.png 980w" alt="" class="img-1"><img src="images/Ellipse-186.png" loading="lazy" sizes="(max-width: 991px) 100vw, (max-width: 1919px) 60vw, 50vw" srcset="images/Ellipse-186-p-500.png 500w, images/Ellipse-186-p-800.png 800w, images/Ellipse-186.png 923w" alt="" class="img-2"><img src="images/Ellipse-185.png" loading="lazy" sizes="(max-width: 980px) 100vw, (max-width: 991px) 980px, (max-width: 1919px) 25vw, 50vw" srcset="images/Ellipse-185-p-500.png 500w, images/Ellipse-185-p-800.png 800w, images/Ellipse-185.png 980w" alt="" class="img-3"><img src="images/Ellipse-186.png" loading="lazy" sizes="(max-width: 991px) 100vw, 40vw" srcset="images/Ellipse-186-p-500.png 500w, images/Ellipse-186-p-800.png 800w, images/Ellipse-186.png 923w" alt="" class="img-4 _3">
+      </div>
+      <div class="section_home-testimonial">
+        <div class="padding-global">
+          <div class="padding-vertical padding-xhuge">
+            <div class="container-large">
+              <div class="testimonial-wrap">
+                <div class="container-wrap">
+                  <div class="head-t-wrap">
+                    <h2>What Other Companies Are Saying</h2>
+                  </div>
+                  <div class="t-grid">
+                    <div id="w-node-f95cdfa5-d7df-4fa1-3add-f0a1766617c3-80e51242" class="t-card"><img src="images/bxs_quote-alt-left.png" loading="lazy" alt="">
+                      <div class="t-head"><img src="images/Ellipse-181.png" loading="lazy" width="78" alt="" class="t-img">
+                        <div class="t-name">
+                          <div class="text-size-medium">Cameroon Roberts</div>
+                          <div class="text-weight-light">Operations Manager at Respondly</div>
+                        </div>
+                      </div>
+                      <div>Settly is absolutely essential for any business owner who wants to take their customer service experience up a notch!</div>
+                    </div>
+                    <div id="w-node-_89abdbfe-81e5-8d6b-f35e-1b7ac03353eb-80e51242" class="t-card m"><img src="images/bxs_quote-alt-left.png" loading="lazy" alt="">
+                      <div class="t-head"><img src="images/Ellipse-181-1.png" loading="lazy" width="89" alt="" class="t-img">
+                        <div class="t-name">
+                          <div class="text-size-medium">John Mcmahon</div>
+                          <div class="text-weight-light">A Business Coach In The United States</div>
+                        </div>
+                      </div>
+                      <div>Working with Settly has been one of the best investments that we’ve ever made. Not only did they provide us with highly-skilled appointment setters who were familiar with our industry and understood our target market, but they also provided invaluable customer service to make sure that we were able to get maximum results from our services.</div>
+                    </div>
+                    <div id="w-node-_4c13100a-7156-9138-b656-df790f7e2f09-80e51242" class="t-card l"><img src="images/bxs_quote-alt-left.png" loading="lazy" alt="">
+                      <div class="t-head"><img src="images/Ellipse-181-2.png" loading="lazy" alt="" class="t-img">
+                        <div class="t-name">
+                          <div class="text-size-medium">Jenna Johns</div>
+                          <div class="text-weight-light">A Marketing Professional From Chicago</div>
+                        </div>
+                      </div>
+                      <div>Settly made it so easy to book appointments without wasting time or money on traditional methods like cold-calling. I especially loves that their appointment setting services are customizable, so they can take on projects of any size.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><img src="images/cen-big.png" loading="lazy" sizes="(max-width: 991px) 100vw, 50vw" srcset="images/cen-big-p-500.png 500w, images/cen-big-p-800.png 800w, images/cen-big-p-1080.png 1080w, images/cen-big.png 1280w" alt="" class="bg-img">
+      </div>
+      <div class="section_home-2">
+        <div class="padding-global">
+          <div class="padding-bottom padding-xlarge">
+            <div class="container-large">
+              <div class="sec-2-grid">
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b79023-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b79023" style="opacity:0" class="grid-image left"><img src="images/Group-1000004382.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004382-p-500.png 500w, images/Group-1000004382.png 794w" alt="" class="grid-img"></div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b79025-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b79025" style="opacity:0" class="grid-text">
+                  <h2>Eliminate Your Hiring Costs</h2>
+                  <div class="divider"></div>
+                  <p>Searching for a reliable appointment setter can be a tedious and costly process. By using Settly you can save time and money. With our experienced team, your hiring costs are eliminated as it takes on the burden of scouting for the right candidate for you. Not only is the hiring process made simpler, but it is also more cost-effective so you don&#x27;t have to spend too much on finding the perfect fit for the role. <br><br>Our professional appointment setters recognize that you don&#x27;t have all day to put aside to hire someone, so they streamline the process and work quickly yet efficiently to save you loads of trouble down the road.</p>
+                </div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b7902e-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b7902e" style="opacity:0" class="grid-text">
+                  <h2>Improve Lead Quality</h2>
+                  <div class="divider"></div>
+                  <p>Finding qualified leads can be a tricky process, especially when trying to find ones that are ready to buy. That&#x27;s why Settly is here to make the process easier. Our appointment setting services will help you source high quality leads in less time and at a fraction of the cost. <br><br>With our experienced team and modern tools, we’ll give your lead-generation pipeline an efficient boost to ensure only the most interested customers land on your business’s doorstep. So, don&#x27;t wait any longer - start improving your lead quality with Settly today.</p>
+                </div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b79037-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b79037" style="opacity:0" class="grid-image right"><img src="images/Group-1000004415.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004415-p-500.png 500w, images/Group-1000004415-p-800.png 800w, images/Group-1000004415.png 817w" alt="" class="grid-img"></div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b79039-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b79039" style="opacity:0" class="grid-image left"><img src="images/Group-1000004372.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004372-p-500.png 500w, images/Group-1000004372.png 818w" alt="" class="grid-img"></div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b7903b-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b7903b" style="opacity:0" class="grid-text">
+                  <h2>Never Worry AboutScheduling Again</h2>
+                  <div class="divider"></div>
+                  <p>Have you ever spent way too much time trying to coordinate the perfect meeting with a client? Scheduling can be incredibly tedious and stressful, but it doesn&#x27;t have to be. With our professional appointment setters, you&#x27;ll never have to worry about finding the best time for your clients again.<br><br>Our top-notch setters will take care of all the details so that all you need to focus on is showing up to the sales calls we set for you. So don&#x27;t get bogged down in calendars and appointments - let our diligent team handle it for you.</p>
+                </div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b79044-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b79044" style="opacity:0" class="grid-text">
+                  <h2>Get More Sales Opportunities</h2>
+                  <div class="divider"></div>
+                  <p>Have you ever wished you could get more sales opportunities simply by having someone else do the hard work for you? Our appointment setting services can help. We will source and deliver qualified leads to help market your business or product - all while taking the legwork out of the equation. <br><br>We understand the frustration that comes with not being able to find good leads, let alone connect with potential customers. Our experienced team of creative professionals is here to bridge the gap between your goals and those qualified prospects so that you don&#x27;t have to do it on your own. Make sure you’re getting more bang for your buck this sales cycle - let us help increase your sales opportunities today.</p>
+                </div>
+                <div id="w-node-_907d8faf-f97d-3e2c-4875-d1a6f7b7904d-80e51242" data-w-id="907d8faf-f97d-3e2c-4875-d1a6f7b7904d" style="opacity:0" class="grid-image right"><img src="images/Group-1000004383.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004383-p-500.png 500w, images/Group-1000004383-p-800.png 800w, images/Group-1000004383.png 827w" alt="" class="grid-img"></div>
+                <div id="w-node-e5c94765-e199-49a9-3e11-2bb483a92316-80e51242" data-w-id="e5c94765-e199-49a9-3e11-2bb483a92316" style="opacity:0" class="grid-image left"><img src="images/Group-1000004371.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 81vw, (max-width: 1919px) 46vw, 626px" srcset="images/Group-1000004371-p-500.png 500w, images/Group-1000004371.png 794w" alt="" class="grid-img"></div>
+                <div id="w-node-adb1beec-55c0-0b30-2002-eef1a2cfe814-80e51242" data-w-id="adb1beec-55c0-0b30-2002-eef1a2cfe814" style="opacity:0" class="grid-text">
+                  <h2>Have Leads Nurtured &amp; Turned Into Happy Customers</h2>
+                  <div class="divider"></div>
+                  <p>If you’re looking for leads to close and turn into happy customers, look no further than our appointment setting team. We understand that connecting with the right decision-makers can be a challenge, but with us on the job, we’ll make sure you get in contact with the perfect person to get your pitch heard.<br><br>Our deep knowledge of lead nurturing lets us give sound advice yet still tailored to fit each unique situation; from introducing cold leads, to follow-up conversations and thank you notes, our team knows how to ensure smooth customer onboarding. Put our professional appointment setters to work and watch as your leads are tirelessly nurtured and turned into lifelong supporters of your brand.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><img src="images/Ellipse-185.png" loading="lazy" sizes="(max-width: 479px) 100vw, 50vw" srcset="images/Ellipse-185-p-500.png 500w, images/Ellipse-185-p-800.png 800w, images/Ellipse-185.png 980w" alt="" class="img-1 _2"><img src="images/Ellipse-186.png" loading="lazy" sizes="(max-width: 991px) 100vw, 40vw" srcset="images/Ellipse-186-p-500.png 500w, images/Ellipse-186-p-800.png 800w, images/Ellipse-186.png 923w" alt="" class="img-2 _2"><img src="images/Ellipse-185.png" loading="lazy" sizes="(max-width: 980px) 100vw, (max-width: 991px) 980px, 40vw" srcset="images/Ellipse-185-p-500.png 500w, images/Ellipse-185-p-800.png 800w, images/Ellipse-185.png 980w" alt="" class="img-3 _2"><img src="images/Ellipse-186.png" loading="lazy" sizes="(max-width: 991px) 100vw, 30vw" srcset="images/Ellipse-186-p-500.png 500w, images/Ellipse-186-p-800.png 800w, images/Ellipse-186.png 923w" alt="" class="img-4 _2"><img src="images/Ellipse-185.png" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 297.3500061035156px, 30vw" srcset="images/Ellipse-185-p-500.png 500w, images/Ellipse-185-p-800.png 800w, images/Ellipse-185.png 980w" alt="" class="img-5">
+      </div>
+      <div class="section_home-footer">
+        <div class="padding-global">
+          <div class="padding-vertical padding-large _1">
+            <div class="container-large">
+              <div class="footer-wrap">
+                <div class="fppter-left"><img src="images/Settly.svg" loading="lazy" alt="">
+                  <div class="padding-bottom padding-small"></div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor</p>
+                  <div class="padding-bottom padding-small"></div>
+                  <p class="copyright-text">©2023. Settly</p>
+                </div>
+                <div class="footer-right">
+                  <a href="#" class="social-links w-inline-block"><img src="images/Group-1000004346.png" loading="lazy" alt=""></a>
+                  <a href="#" class="social-links w-inline-block"><img src="images/Twitter.png" loading="lazy" alt=""></a>
+                  <a href="#" class="social-links w-inline-block"><img src="images/Instagram.png" loading="lazy" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63dcda1db87d17133fe5123a" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
